@@ -55,11 +55,11 @@
 
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2  &kp N3               &kp N4             &kp N5                                                          &kp N6           &kp N7             &kp N8               &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB    &kp Q   &kp W   &kp E                &kp R              &kp T                                                           &kp Y            &kp U              &kp I                &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A   &kp S   &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml LEFT_ALT G                                                 &hmr LEFT_ALT H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X   &kp C                &kp V              &kp B            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N            &kp M              &kp COMMA            &kp DOT  &kp FSLH  &kp ESCAPE
-                           &kp LEFT_WIN         &mo 3              &mo 1            &kp SPACE               &kp RET                &mo 2            &kp RIGHT_ALT      &kp DEL
+&kp ESC           &kp N1  &kp N2  &kp N3               &kp N4             &kp N5                                                          &kp N6           &kp N7             &kp N8               &kp N9   &kp N0    &kp BACKSPACE
+&kp TAB           &kp Q   &kp W   &kp E                &kp R              &kp T                                                           &kp Y            &kp U              &kp I                &kp O    &kp P     &kp BACKSPACE
+&kp LEFT_SHIFT    &kp A   &kp S   &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &hml LEFT_ALT G                                                 &hmr LEFT_ALT H  &hmr LEFT_SHIFT J  &hmr LEFT_CONTROL K  &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C                &kp V              &kp B            &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp N            &kp M              &kp COMMA            &kp DOT  &kp FSLH  &kp ESCAPE
+                                  &kp LEFT_WIN         &mo 3              &mo 1            &kp SPACE               &kp RET                &mo 2            &kp RIGHT_ALT      &kp DEL
             >;
         };
 
@@ -73,11 +73,11 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &trans    &trans          &trans          &trans           &trans                                                &trans  &trans  &trans  &trans   &trans   &trans
-&kp F1  &kp F2    &kp F3          &kp F4          &kp F5           &kp F6                                                &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &kp HOME  &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)    &kp PAGE_UP                                           &none   &none   &none   &none    &none    &none
-&trans  &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &none   &none   &none   &none    &none    &none
-                                  &trans          &trans           &trans         &trans              &trans             &trans  &trans  &trans
+&trans  &trans    &trans          &trans          &trans           &trans                                                &trans        &trans          &trans            &trans   &trans   &trans
+&kp F1  &kp F2    &kp F3          &kp F4          &kp F5           &kp F6                                                &kp F7        &kp F8          &kp F9            &kp F10  &kp F11  &kp F12
+&trans  &kp HOME  &kp LC(LEFT)    &kp UP_ARROW    &kp LC(RIGHT)    &kp PAGE_UP                                           &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &none    &none    &none
+&trans  &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &none         &none           &none             &none    &none    &none
+                                  &trans          &trans           &trans         &trans              &trans             &trans        &trans          &trans
             >;
         };
 
@@ -93,18 +93,18 @@
             bindings = <
 &trans   &trans    &trans  &trans    &trans      &trans                                          &trans          &trans         &trans                &trans                 &trans           &trans
 &kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                                     &kp CARET       &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_ASTERISK  &trans
-&trans   &trans    &trans  &trans    &trans      &trans                                          &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH    &kp GRAVE
-&trans   &trans    &trans  &trans    &trans      &trans       &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp BSLH
+&none    &none     &none   &none     &none       &none                                           &kp MINUS       &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp BACKSLASH    &kp GRAVE
+&none    &none     &none   &none     &none       &none        &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp BSLH
                            &trans    &trans      &trans       &trans            &trans           &trans          &trans         &trans
             >;
         };
 
         shortcut_layer {
             bindings = <
-&rgb_ug RGB_TOG    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                                   &kp LC(LA(F1))  &kp LS(F12)  &trans  &trans  &trans  &trans
-&trans             &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(0,0,100)                    &trans          &trans       &trans  &trans  &trans  &trans
-&trans             &trans           &trans           &trans           &trans           &trans                                            &trans          &trans       &trans  &trans  &trans  &trans
-&ext_power EP_TOG  &trans           &trans           &trans           &trans           &trans                          &trans    &trans  &trans          &trans       &trans  &trans  &trans  &trans
+&rgb_ug RGB_TOG    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF                                   &kp LC(LA(F1))  &kp LS(F12)  &none   &none  &none  &none
+&none              &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_COLOR_HSB(0,0,100)                    &none           &none        &none   &none  &none  &none
+&none              &none            &none            &none            &none            &none                                             &none           &none        &none   &none  &none  &none
+&ext_power EP_TOG  &none            &none            &none            &none            &none                           &none     &none   &none           &none        &none   &none  &none  &none
                                                      &trans           &trans           &trans                          &trans    &trans  &trans          &trans       &trans
             >;
 
@@ -113,11 +113,11 @@
 
         navigation_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&none  &none  &none  &none   &none   &none                     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none                     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none                     &none   &none   &none   &none  &none  &none
+&none  &none  &none  &none   &none   &none   &none     &none   &none   &none   &none   &none  &none  &none
+                     &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "Navigation";
